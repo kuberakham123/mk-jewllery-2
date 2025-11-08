@@ -1,6 +1,2 @@
-# mk-jewllery-2
+# mk-jewllery
 test site
-nanpi 
-thengu matha
-necklace
-likhom
