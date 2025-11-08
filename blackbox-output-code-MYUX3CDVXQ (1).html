@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MK Jewellery - Elegant Pieces for Every Occasion</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">MK Jewellery</div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#shop">Shop</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><span id="cart-count">Cart (0)</span></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <h1>Welcome to MK Jewellery</h1>
+        <p>Discover timeless elegance with our handcrafted gold and silver pieces.</p>
+        <a href="#shop" class="btn">Shop Now</a>
+    </section>
+
+    <section id="shop" class="products">
+        <h2>Featured Collections</h2>
+        <div class="filters">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="rings">Rings</button>
+            <button class="filter-btn" data-filter="necklaces">Necklaces</button>
+            <button class="filter-btn" data-filter="bracelets">Bracelets</button>
+        </div>
+        <div class="product-grid">
+            <div class="product" data-category="rings">
+                <img src="images/ring.jpg" alt="Diamond Ring">
+                <h3>Diamond Engagement Ring</h3>
+                <p>$1,200</p>
+                <button class="add-to-cart" data-name="Diamond Engagement Ring" data-price="1200">Add to Cart</button>
+            </div>
+            <div class="product" data-category="necklaces">
+                <img src="images/necklace.jpg" alt="Gold Necklace">
+                <h3>Gold Chain Necklace</h3>
+                <p>$350</p>
+                <button class="add-to-cart" data-name="Gold Chain Necklace" data-price="350">Add to Cart</button>
+            </div>
+            <div class="product" data-category="bracelets">
+                <img src="images/bracelet.jpg" alt="Silver Bracelet">
+                <h3>Silver Bangle Bracelet</h3>
+                <p>$150</p>
+                <button class="add-to-cart" data-name="Silver Bangle Bracelet" data-price="150">Add to Cart</button>
+            </div>
+            <!-- Add more products as needed -->
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>About MK Jewellery</h2>
+        <p>Founded in 2020, MK Jewellery specializes in bespoke and ready-to-wear pieces using premium materials. Our mission is to make luxury accessible.</p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form id="contact-form">
+            <input type="text" id="name" placeholder="Name" required>
+            <input type="email" id="email" placeholder="Email" required>
+            <textarea id="message" placeholder="Message"></textarea>
+            <button type="submit">Send</button>
+        </form>
+        <p id="form-response"></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 MK Jewellery. Follow us on <a href="#">Instagram</a>.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
